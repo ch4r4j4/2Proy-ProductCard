@@ -15,8 +15,8 @@ body{
     border-radius: 1rem; 
     box-sizing: border-box;
     display: flex;
-    max-height: 30.75rem;
-    max-width: 41rem;
+    height: 30.75rem;
+    width: 41rem;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -90,4 +90,40 @@ body{
 .boton span{
     color: hsl(0, 0%, 100%);
     font-weight: bold;
+}
+
+.img-mobile{
+    display: none;
+}
+
+@media (max-width: 575px) {
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    .container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 21.5rem;
+        height: auto;
+    }
+
+    .imgchanel{
+        display: none;
+    }
+    
+    .img-mobile{
+        width: auto;
+        display: inline-block;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    .productopin{        
+        padding: 1.7rem;
+        height: 23.5rem;
+    }
 }
